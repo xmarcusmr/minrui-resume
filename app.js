@@ -97,7 +97,7 @@ const evidenceItems = [
   ['evidence-30.jpeg', '“畅想之星电子图书阅读推广”阅读比赛三等奖', '阅读竞赛', '江西生物科技职业学院图书馆 × 北京畅想之星 · 2023'],
   ['evidence-27.jpeg', '“畅享四‘阅’天，等你来挑战”校赛三等奖', '阅读竞赛', '江西生物科技职业学院图书馆 · 2024'],
   ['evidence-08.jpeg', '冬季搏击培训“未来之星”称号', '体育训练', '一拳格斗健身训练中心 · 2021']
-].map(([file, title, category, meta]) => ({ src: `assets/evidence/${file}`, title, category, meta }));
+].map(([file, title, category, meta]) => ({ src: `assets/evidence/${file}?v=privacy-20261026`, title, category, meta }));
 
 const evidenceTrack = document.querySelector('[data-evidence-track]');
 if (evidenceTrack) {
@@ -152,7 +152,7 @@ const i18n = {
     '成于让不同的人走向同一个目标。”':'and grows by bringing different people toward a shared goal.”',
     '东国大学经营学学士、全球革新经营硕士研究生。曾入选韩国政府官方全球传播项目 Korea.net Honorary Reporter，并在 APEC 峰会、跨文化公共服务与商业运营中持续实践。':'Business Administration graduate and Global Innovation Management master’s student at Dongguk University. Selected as a Korea.net Honorary Reporter, with experience in APEC, cross-cultural public service, and business operations.',
     '我关注国际传播、用户洞察与组织协作，也相信技术的价值不在炫技，而在于让真实问题更快被解决。':'I focus on global communication, user insight, and organizational collaboration. I believe technology matters when it solves real problems faster.',
-    '项荣誉':'honors &','与奖项':'awards','职业技能':'professional','证书':'certificates','大学':'university','奖学金':'scholarships','专业前 6%':'Top 6%',
+    '项荣誉':'honors &','与奖项':'awards','职业技能':'professional','证书':'certificates','大学':'university','奖学金':'scholarships','专业前 5%':'Top 5%',
     'EDUCATION / 教育背景':'EDUCATION',
     '从技术基础，走向':'From a technical foundation to ','全球商业视野。':'a global business perspective.',
     '教育于我不是履历上的阶段，而是一条持续拓宽认知、表达与行动边界的路径。':'Education is not merely a stage on my résumé, but a path that continually expands how I think, communicate, and act.',
@@ -189,7 +189,7 @@ const i18n = {
     '成于让不同的人走向同一个目标。”':'서로 다른 사람들이 하나의 목표로 나아갈 때 완성됩니다.”',
     '东国大学经营学学士、全球革新经营硕士研究生。曾入选韩国政府官方全球传播项目 Korea.net Honorary Reporter，并在 APEC 峰会、跨文化公共服务与商业运营中持续实践。':'동국대학교 경영학 학사 및 글로벌혁신경영 석사과정. Korea.net 명예기자로 선발되었으며 APEC, 다문화 공공서비스, 비즈니스 운영 현장에서 경험을 쌓았습니다.',
     '我关注国际传播、用户洞察与组织协作，也相信技术的价值不在炫技，而在于让真实问题更快被解决。':'국제소통, 사용자 인사이트, 조직 협업에 관심이 있으며 기술의 가치는 실제 문제를 더 빠르게 해결하는 데 있다고 믿습니다.',
-    '项荣誉':'개 이상의','与奖项':'수상','职业技能':'전문 역량','证书':'자격증','大学':'대학','奖学金':'장학금','专业前 6%':'전공 상위 6%',
+    '项荣誉':'개 이상의','与奖项':'수상','职业技能':'전문 역량','证书':'자격증','大学':'대학','奖学金':'장학금','专业前 5%':'전공 상위 5%',
     'EDUCATION / 教育背景':'EDUCATION / 학력','从技术基础，走向':'기술적 기반에서 ','全球商业视野。':'글로벌 비즈니스 시야로.',
     '教育于我不是履历上的阶段，而是一条持续拓宽认知、表达与行动边界的路径。':'교육은 이력서의 한 단계가 아니라 사고와 표현, 행동의 경계를 계속 넓혀 가는 과정입니다.',
     '韩国东国大学':'동국대학교','江西生物科技职业学院':'장시생물과학기술직업대학','江西省重点专科院校':'장시성 중점 전문대학',

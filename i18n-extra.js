@@ -3,7 +3,7 @@ const enExtra = {
   '，并在 APEC 峰会、跨文化公共服务与商业运营中持续实践。':', with continued experience in APEC, cross-cultural public service, and business operations.',
   '项':'','2025.08 — 2027.08（预计）':'2025.08 — 2027.08 (Expected)','QS 2027 全球第 520 位':'QS World University Rankings 2027 · No. 520',
   '国际经营、生产运营管理、财务管理、人力资源管理、消费者行为学、宏观组织学、市场营销学、经营学原论、全球可持续经营论（ESG 经营）、经营分析顶点设计。':'International Business, Operations Management, Financial Management, Human Resources, Consumer Behavior, Organization Theory, Marketing, Principles of Management, Global Sustainable Management (ESG), and Business Analytics Capstone.',
-  'GPA 4.2/4.5，专业前 6%':'GPA 4.2/4.5 · Top 6% in major','获东国大学优秀人才奖学金、勤工奖学金等 7 项奖学金。':'Recipient of seven scholarships, including Dongguk University’s Outstanding Talent and Work-Study scholarships.',
+  'GPA 4.2/4.5，专业前 5%':'GPA 4.2/4.5 · Top 5% in major','获东国大学优秀人才奖学金、勤工奖学金等 7 项奖学金。':'Recipient of seven scholarships, including Dongguk University’s Outstanding Talent and Work-Study scholarships.',
   '担任学院宣传大使，负责小红书、抖音内容策划与发布，作品获平台推荐并实现有效引流转化。':'College ambassador responsible for content planning and publishing on Xiaohongshu and Douyin; featured content generated measurable audience conversion.',
   '担任学科班长兼课题发表小组组长，统筹团队完成学术研究与成果展示。':'Served as class representative and presentation team leader, coordinating academic research and final presentations.',
   '学分专业前 5%，均分 82/100；半年修完毕业所需全部学分。':'Top 5% by credits, average 82/100; completed all graduation credits within six months.',
@@ -41,7 +41,7 @@ const enExtra = {
   '江西省大学生“思政课，我想对你说”文学竞赛 · 二等奖':'Jiangxi Student “What I Want to Say to Ideological Education” Writing Competition · Second Prize','江西省教育厅':'Jiangxi Provincial Department of Education',
   '东国大学优秀人才奖学金':'Dongguk University Outstanding Talent Scholarship','东国大学勤工奖学金':'Dongguk University Work-Study Scholarship',
   'Korea.net 韩国荣誉记者':'Korea.net Honorary Reporter','围绕 K-Culture、社会发展及留学生群体进行选题、采访与国际传播。':'Produces stories, interviews, and international content on K-Culture, social development, and international students.',
-  '东国大学 · 经营学 / 全球革新经营':'Dongguk University · Business Administration / Global Innovation Management','GPA 4.2/4.5，专业前 6%；学院宣传大使，获优秀人才奖学金、勤工奖学金等 7 项奖学金。':'GPA 4.2/4.5, top 6%; college ambassador and recipient of seven scholarships.',
+  '东国大学 · 经营学 / 全球革新经营':'Dongguk University · Business Administration / Global Innovation Management','GPA 4.2/4.5，专业前 5%；学院宣传大使，获优秀人才奖学金、勤工奖学金等 7 项奖学金。':'GPA 4.2/4.5, top 5%; college ambassador and recipient of seven scholarships.',
   '参与民官联合巡逻、国际活动引导与中韩沟通协调，服务在韩留学生群体。':'Supports public–private patrols, international events, and China–Korea coordination for international students.','中国人寿杭州分公司 · 商业运营':'China Life Hangzhou Branch · Business Operations','高净值客户运营、人才管理、品牌活动与行政增效；续保率 90%+。':'Managed high-value clients, recruiting, brand events, and operations; achieved 90%+ renewal.','江西生物科技职业学院 · 团支部书记':'Jiangxi Biotech Vocational College · Youth League Branch Secretary','组织 50+ 场主题活动，带领支部获全系唯一“五四红旗团支部”。':'Organized 50+ themed events and led the department’s only May Fourth Red Flag Branch.',
   '选题研究 / 采访表达 / 跨文化沟通':'Research / Interviewing / Cross-cultural Communication','客户关系 / 活动策划 / 流程优化':'Client Relations / Event Planning / Process Optimization','团队协作 / 多方协调 / 临场应变':'Teamwork / Multi-party Coordination / Adaptability','Codex / 商务演示 / HarmonyOS':'Codex / Business Presentations / HarmonyOS',
   '应用开发高级专业证书':'Advanced Application Development Certificate','OpenHarmony 工程师认证':'OpenHarmony Engineer Certification','Photoshop 一级证书':'Photoshop Level 1 Certificate','救护员 CPR + AED':'First Aid · CPR + AED','轻型民用无人机合格证':'Light Civil UAV Certificate','机动车 C1 驾驶证':'C1 Driver’s License'
@@ -49,7 +49,7 @@ const enExtra = {
 
 const koExtra = Object.fromEntries(Object.entries(enExtra).map(([key,value]) => [key,value]));
 Object.assign(koExtra, {
-  '项':'','2025.08 — 2027.08（预计）':'2025.08 — 2027.08 (예정)','QS 2027 全球第 520 位':'QS 세계대학순위 2027 · 520위','GPA 4.2/4.5，专业前 6%':'GPA 4.2/4.5 · 전공 상위 6%',
+  '项':'','2025.08 — 2027.08（预计）':'2025.08 — 2027.08 (예정)','QS 2027 全球第 520 位':'QS 세계대학순위 2027 · 520위','GPA 4.2/4.5，专业前 5%':'GPA 4.2/4.5 · 전공 상위 5%',
   '2026.05 — 至今':'2026.05 — 현재','核心成员':'핵심 팀원','国家级银奖 · 省级金奖':'국가 은상 · 성급 금상','85% 诊断准确率':'진단 정확도 85%','24 家养殖场 · 近千个诊疗问题':'24개 농장 · 약 1,000건의 진료 문제',
   '韩国政府官方委任状 · 2026':'대한민국 정부 공식 위촉장 · 2026','2025 APEC 亚太经合组织峰会':'2025 APEC 정상회의','韩国 · 庆州':'대한민국 · 경주','APEC 2025 KOREA · 庆州':'APEC 2025 KOREA · 경주','安全服务 · 中韩沟通':'안전 서비스 · 한중 소통','井冈山 · 基层文明实践':'징강산 · 지역사회 실천',
   '韩国文化体育观光部官方全球传播项目':'대한민국 문화체육관광부 공식 글로벌 홍보 사업','Korea.net 韩国荣誉记者':'Korea.net 명예기자','韩国庆州留学生公安服务队':'경주 외국인 유학생 치안봉사대',
@@ -98,7 +98,7 @@ Object.assign(i18n.ko, {
   '推动系统落地 24 家基层养殖场，累计解决近千个实际诊疗问题，提升基层兽医诊疗效率。':'24개 농장에 시스템을 도입해 약 1,000건의 진료 문제를 해결하고 현장 진료 효율을 높였습니다.',
   '协同科研机构推进技术合作与资源对接，探索“产品 + 服务”的可持续商业化模式。':'연구기관과 기술협력 및 자원 연계를 추진하고 ‘제품+서비스’의 지속가능한 사업모델을 모색했습니다.',
   '中国国际大学生创新大赛 · 银奖':'중국 국제대학생 혁신대회 · 은상','教育部等 12 个国家部委联合':'교육부 등 12개 중앙부처 공동 주최','中国国际“互联网+”大学生创新创业大赛 · 江西省金奖':'중국 국제 인터넷+ 대학생 혁신창업대회 · 장시성 금상','江西省教育厅等省级 12部门联合':'장시성 교육청 등 12개 기관 공동 주최','全国高校大学生“我心中的思政课” · 三等奖':'전국 대학생 ‘내 마음속의 사상정치 수업’ · 3등','中华人民共和国教育部':'중화인민공화국 교육부','江西省大学生“思政课，我想对你说”文学竞赛 · 二等奖':'장시성 대학생 사상정치 글쓰기대회 · 2등','江西省教育厅':'장시성 교육청','东国大学优秀人才奖学金':'동국대학교 우수인재 장학금','东国大学勤工奖学金':'동국대학교 근로장학금',
-  '围绕 K-Culture、社会发展及留学生群体进行选题、采访与国际传播。':'K-Culture, 사회발전, 유학생을 주제로 기획·취재·국제홍보를 수행합니다.','东国大学 · 经营学 / 全球革新经营':'동국대학교 · 경영학 / 글로벌혁신경영','GPA 4.2/4.5，专业前 6%；学院宣传大使，获优秀人才奖学金、勤工奖学金等 7 项奖学金。':'GPA 4.2/4.5, 전공 상위 6%; 홍보대사 및 7개 장학금 수혜.','参与民官联合巡逻、国际活动引导与中韩沟通协调，服务在韩留学生群体。':'민관 합동순찰, 국제행사 안내, 한중 소통을 통해 재한 유학생을 지원합니다.','中国人寿杭州分公司 · 商业运营':'중국생명 항저우지사 · 비즈니스 운영','高净值客户运营、人才管理、品牌活动与行政增效；续保率 90%+。':'고액자산 고객, 인재관리, 브랜드행사 및 운영 효율화를 담당해 갱신율 90% 이상을 달성했습니다.','江西生物科技职业学院 · 团支部书记':'장시생물과학기술직업대학 · 청년단 지부 서기','组织 50+ 场主题活动，带领支部获全系唯一“五四红旗团支部”。':'50회 이상의 행사를 조직하고 학과 유일의 5·4 홍기 지부 수상을 이끌었습니다.',
+  '围绕 K-Culture、社会发展及留学生群体进行选题、采访与国际传播。':'K-Culture, 사회발전, 유학생을 주제로 기획·취재·국제홍보를 수행합니다.','东国大学 · 经营学 / 全球革新经营':'동국대학교 · 경영학 / 글로벌혁신경영','GPA 4.2/4.5，专业前 5%；学院宣传大使，获优秀人才奖学金、勤工奖学金等 7 项奖学金。':'GPA 4.2/4.5, 전공 상위 5%; 홍보대사 및 7개 장학금 수혜.','参与民官联合巡逻、国际活动引导与中韩沟通协调，服务在韩留学生群体。':'민관 합동순찰, 국제행사 안내, 한중 소통을 통해 재한 유학생을 지원합니다.','中国人寿杭州分公司 · 商业运营':'중국생명 항저우지사 · 비즈니스 운영','高净值客户运营、人才管理、品牌活动与行政增效；续保率 90%+。':'고액자산 고객, 인재관리, 브랜드행사 및 운영 효율화를 담당해 갱신율 90% 이상을 달성했습니다.','江西生物科技职业学院 · 团支部书记':'장시생물과학기술직업대학 · 청년단 지부 서기','组织 50+ 场主题活动，带领支部获全系唯一“五四红旗团支部”。':'50회 이상의 행사를 조직하고 학과 유일의 5·4 홍기 지부 수상을 이끌었습니다.',
   '选题研究 / 采访表达 / 跨文化沟通':'주제 연구 / 인터뷰 / 다문화 소통','客户关系 / 活动策划 / 流程优化':'고객관계 / 행사기획 / 프로세스 개선','团队协作 / 多方协调 / 临场应变':'팀워크 / 다자 조율 / 현장 대응','Codex / 商务演示 / HarmonyOS':'Codex / 비즈니스 프레젠테이션 / HarmonyOS'
 });
 Object.assign(i18n.en, {
