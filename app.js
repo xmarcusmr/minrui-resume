@@ -73,14 +73,14 @@ const evidenceItems = [
   ['evidence-12.jpeg', 'OpenAtom OpenHarmony 人才认证', '职业认证', 'Certified OpenHarmony Associate（OFCA）· 2025'],
   ['evidence-16.jpeg', '第九届江西省“互联网+”大学生创新创业大赛金奖', '省级竞赛', '职教赛道 · 客家预制菜项目 · 2023'],
   ['evidence-18.jpeg', '全省大学生“思政课，我想对你说”征文二等奖', '省级竞赛', '江西省教育厅 · 2023 年 6 月 21 日'],
-  ['evidence-13.png', '轻型民用无人驾驶航空器安全操控理论培训合格证明', '职业认证', '中国民用航空局 · 2024 年 12 月 26 日'],
-  ['evidence-20.jpeg', '红十字救护员证', '职业认证', '南昌县红十字会 · 2024 年 6 月 16 日'],
-  ['evidence-21.jpeg', '全国计算机等级考试一级合格证书', '职业认证', '计算机基础及 Photoshop 应用 · 2024 年 9 月'],
+  ['evidence-13-private-v2.png', '轻型民用无人驾驶航空器安全操控理论培训合格证明', '职业认证', '中国民用航空局 · 2024 年 12 月 26 日'],
+  ['evidence-20-private-v2.png', '红十字救护员证', '职业认证', '南昌县红十字会 · 2024 年 6 月 16 日'],
+  ['evidence-21-private-v2.png', '全国计算机等级考试一级合格证书', '职业认证', '计算机基础及 Photoshop 应用 · 2024 年 9 月'],
   ['evidence-15.jpeg', '联合国儿童基金会月捐支持证明', '公益参与', 'UNICEF“月捐为儿童”项目 · 2021'],
   ['evidence-02.jpeg', '抗微生物药物优化课程参与证明', '国际课程', 'OpenWHO：基于能力的抗微生物药物优化模型 · 2023'],
   ['evidence-03.jpeg', '安全管理卫生课程成就记录', '国际课程', 'OpenWHO：For a healthier world: safely managed sanitation · 2023'],
   ['evidence-17.jpeg', '小动物保护科普活动参与证书', '志愿服务', '中国小动物保护协会'],
-  ['evidence-10.jpeg', '阿里巴巴 3 小时公益平台证书', '公益参与', '累计公益时 13.9 小时 · 截至 2025 年 5 月 10 日'],
+  ['evidence-10-private-v2.png', '阿里巴巴 3 小时公益平台证书', '公益参与', '累计公益时 13.9 小时 · 截至 2025 年 5 月 10 日'],
   ['evidence-06.jpeg', '五四红旗团支部', '集体荣誉', '2022 级计算机应用技术 2 班团支部 · 2024'],
   ['evidence-04.jpeg', '2023 年度优秀共青团员', '学生工作', '共青团江西生物科技职业学院委员会 · 2024'],
   ['evidence-09.jpeg', '2022 年度优秀共青团干部', '学生工作', '共青团江西生物科技职业学院委员会 · 2023'],
@@ -97,7 +97,7 @@ const evidenceItems = [
   ['evidence-30.jpeg', '“畅想之星电子图书阅读推广”阅读比赛三等奖', '阅读竞赛', '江西生物科技职业学院图书馆 × 北京畅想之星 · 2023'],
   ['evidence-27.jpeg', '“畅享四‘阅’天，等你来挑战”校赛三等奖', '阅读竞赛', '江西生物科技职业学院图书馆 · 2024'],
   ['evidence-08.jpeg', '冬季搏击培训“未来之星”称号', '体育训练', '一拳格斗健身训练中心 · 2021']
-].map(([file, title, category, meta]) => ({ src: `assets/evidence/${file}?v=privacy-20261026`, title, category, meta }));
+].map(([file, title, category, meta]) => ({ src: `assets/evidence/${file}?v=region-ai-v2`, title, category, meta }));
 
 const evidenceTrack = document.querySelector('[data-evidence-track]');
 if (evidenceTrack) {
@@ -235,13 +235,23 @@ const translatePage = locale => {
     const liveCaption = document.querySelector('[data-evidence-caption]');
     liveCaption.textContent = locale === 'zh' ? title.trim() : (i18n[locale]?.[title.trim()] || title.trim());
   }
-  try { localStorage.setItem('portfolio-language', locale); } catch {}
 };
 
-document.querySelectorAll('[data-lang]').forEach(button => button.addEventListener('click', () => translatePage(button.dataset.lang)));
-let savedLocale = 'zh';
-try { savedLocale = localStorage.getItem('portfolio-language') || 'zh'; } catch {}
-translatePage(['zh','en','ko'].includes(savedLocale) ? savedLocale : 'zh');
+let manuallySelectedLanguage = false;
+document.querySelectorAll('[data-lang]').forEach(button => button.addEventListener('click', () => {
+  manuallySelectedLanguage = true;
+  window.portfolioLocale?.remember(button.dataset.lang);
+  translatePage(button.dataset.lang);
+}));
+
+// All supplemental dictionaries must load before the first translation pass.
+const initializeLocale = () => {
+  translatePage(window.portfolioLocale?.initial || 'en');
+  window.portfolioLocale?.ready.then(locale => {
+    if (!manuallySelectedLanguage) translatePage(locale);
+    document.documentElement.removeAttribute('data-locale-pending');
+  });
+};
 
 if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
